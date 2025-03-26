@@ -1,0 +1,1 @@
+export type {TFilters} from './filters-form.types';
