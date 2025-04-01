@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# Orders Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19+-61DAFB.svg?style=flat&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6.svg?style=flat&logo=typescript) ![Ant Design](https://img.shields.io/badge/Ant_Design-5+-0170FE.svg?style=flat&logo=ant-design) ![Redux](https://img.shields.io/badge/Redux-764ABC.svg?style=flat&logo=redux)
 
-Currently, two official plugins are available:
+*supported languages: RU*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Вебсайт для отображения таблицы заказов с возможностью фильтрации, поиском и возможностью просмотреть подробности конкретного заказа
 
-## Expanding the ESLint configuration
+## Стек:
+- React
+- TypeScript
+- Ant Design
+- Redux + RTK
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Особенности
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Таблица заказов**: Отображение данных в таблице с поддержкой пагинации и прокрутки (Ant Design Table).
+- **Фильтры**: Интерактивная форма фильтров в выдвижной панели (Drawer) для фильтрации заказов.
+- **Типизация**: Полная поддержка TypeScript для надежности и масштабируемости.
+- **Состояние**: Управление фильтрами через Redux.
+- **Адаптивность**: Проект адаптирован для мобильных экранов, планшетов, средних экранов, а также широкоформатных дисплеев.
+
+*В качестве данных используются моки, выполнен в качестве тестового задания*
+
+
+## Установка и запуск
+
+1. **Клонируйте репозиторий**:
+   ```bash
+   git clone https://github.com/natsu-hsr/orders_tracker_react.git
+   cd orders_tracker_react
+
+2. **Установите зависимости**:
+   ```bash 
+   npm install
+
+3. **Запустите проект локально**:
+   ```bash
+   npm run dev
+
+4. **Откройте страницу локально в браузере.**
+
+
+## Структура проекта
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+root/
+├── public/                     # Статические файлы
+│   └── panda.svg               # Иконка сайта
+├── src/                        # Исходный код
+│   ├── assets/                 # Статические ресурсы (лого)
+│   ├── components/             # Компоненты
+│   │   ├── custom-fields/      # Кастомные поля
+│   │   │   ├── fields/         # Поля
+│   │   │   ├── technical/      # Технические компоненты
+│   │   │   ├── custom-fields.types.ts
+│   │   │   └── index.ts
+│   │   ├── custom-table/       # Компонент таблицы
+│   │   ├── filters-form/       # Форма фильтров
+│   │   ├── header/             # Шапка
+│   │   └── order-details-form/ # Форма подробностей заказа
+│   ├── mocks/                  # Моки-данные
+│   ├── pages/                  # Страницы
+│   │   ├── home/               # Домашняя страницы
+│   │   ├── not-found/          # Страница 404
+│   │   ├── order-details/      # Подробности заказа
+│   │   └── orders/             # Страница с таблицей заказов
+│   ├── shared/                 # Общие утилиты и стили
+│   │   ├── styles/             # Общие стили
+│   │   │   └── mixins.scss     # Миксины
+│   ├── store/                  # Настройка Redux
+│   │   ├── config/             # Конфигурация Redux
+│   │   └── slices/             # Слайсы Redux (например, orders)
+│   ├── App.tsx                 # Главный компонент
+│   ├── main.tsx                # Точка входа
+│   └── index.css               # Глобальные стили
+├── package.json                # Конфигурация зависимостей и скриптов
+├── tsconfig.json               # Конфигурация TypeScript
+└── README.md                  
 ```
