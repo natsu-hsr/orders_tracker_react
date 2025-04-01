@@ -1,4 +1,4 @@
-import { TOrders } from "../../store/slices/orders";
+import {TOrders} from "../../store/slices/orders";
 
 export const ordersTableData: TOrders = [
   {

@@ -1,6 +1,6 @@
-import { FrownOutlined } from '@ant-design/icons'
-import { Empty, Flex } from 'antd'
-import { Link } from 'react-router-dom'
+import {FrownOutlined} from '@ant-design/icons'
+import {Empty, Flex} from 'antd'
+import {Link} from 'react-router-dom'
 
 import s from './not-found.module.scss';
 

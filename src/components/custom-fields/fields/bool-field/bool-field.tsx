@@ -1,5 +1,6 @@
-import { Input } from "antd";
-import { FormItemInputProps } from "../../custom-fields.types";
+import {Input} from "antd";
+
+import {FormItemInputProps} from "../../custom-fields.types";
 
 type TBoolFieldTranscript = {
   onTrue: string;

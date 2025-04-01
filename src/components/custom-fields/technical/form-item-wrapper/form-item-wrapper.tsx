@@ -1,6 +1,6 @@
 import Flex from "antd/es/flex";
 import cn from 'classnames';
-import { ReactNode } from "react";
+import {ReactNode} from "react";
 
 import s from './form-item-wrapper.module.scss';
 

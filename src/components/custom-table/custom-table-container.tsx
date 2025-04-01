@@ -1,8 +1,9 @@
-import {CustomTable} from "./custom-table"
-import { TFilters } from "../filters-form";
-import { CustomTableCommonProps } from "./custom-table.types";
-import { FiltersForm } from "../filters-form/filters-form";
 import Row from "antd/es/row";
+
+import {CustomTable} from "./custom-table"
+import {TFilters} from "../filters-form";
+import {CustomTableCommonProps} from "./custom-table.types";
+import {FiltersForm} from "../filters-form/filters-form";
 
 import s from './custom-table-container.module.scss';
 

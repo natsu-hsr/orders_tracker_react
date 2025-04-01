@@ -1,5 +1,5 @@
-import { TOrderPackage } from "../../../../store/slices/orders"
-import { LabelValueText } from "../../technical/label-value-text/label-value-text";
+import {TOrderPackage} from "../../../../store/slices/orders"
+import {LabelValueText} from "../../technical/label-value-text/label-value-text";
 
 type PackageItemProps = {
   orderPackage: TOrderPackage

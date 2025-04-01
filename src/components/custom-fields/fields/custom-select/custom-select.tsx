@@ -1,4 +1,4 @@
-import Select, { SelectProps } from "antd/es/select"
+import Select, {SelectProps} from "antd/es/select"
 
 type CustomSelectProps = Pick<SelectProps, 'options'>
   & Partial<Pick<SelectProps, 'value' | 'defaultValue' | 'onChange'>>;

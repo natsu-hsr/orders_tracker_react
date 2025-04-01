@@ -1,8 +1,9 @@
-import { createSelector } from "@reduxjs/toolkit";
-import { ordersSliceName } from "./orders-slice-constants";
-import { AppState } from "../../config/types";
-import { TOrder } from "./orders-slice-types";
-import { omitBy } from "lodash";
+import {createSelector} from "@reduxjs/toolkit";
+import omitBy from "lodash/omitBy";
+
+import {ordersSliceName} from "./orders-slice-constants";
+import {TOrder} from "./orders-slice-types";
+import {AppState} from "../../config/types";
 
 const selectOrdersSliceState = (state: AppState) => state[ordersSliceName];
 

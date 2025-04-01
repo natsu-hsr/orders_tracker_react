@@ -1,6 +1,7 @@
-import { Input } from "antd";
-import { TOrderDetails } from "../../../../store/slices/orders"
-import { FormItemInputProps } from "../../custom-fields.types";
+import {Input} from "antd";
+
+import {TOrderDetails} from "../../../../store/slices/orders"
+import {FormItemInputProps} from "../../custom-fields.types";
 
 type CostFieldProps = {
   currency: TOrderDetails['itemsCostCurrency'];

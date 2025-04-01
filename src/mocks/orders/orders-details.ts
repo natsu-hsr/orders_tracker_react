@@ -1,4 +1,4 @@
-import { TOrdersDetails } from "../../store/slices/orders";
+import {TOrdersDetails} from "../../store/slices/orders";
 
 export const ordersDetailsMocks: TOrdersDetails = [
   {

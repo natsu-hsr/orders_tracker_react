@@ -1,8 +1,8 @@
-import { Col, Row, Typography } from "antd"
+import {Col, Row, Typography} from "antd"
 import Search from "antd/es/input/Search";
-import { Link, useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
-const { Title } = Typography;
+const {Title} = Typography;
 
 import s from './home.module.scss';
 

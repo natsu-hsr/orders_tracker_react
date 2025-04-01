@@ -1,14 +1,14 @@
-import Form, { useForm } from "antd/es/form/Form";
-import { TFilters } from "./filters-form.types"
-import { Button, Drawer, Empty, Row } from "antd";
+import Form, {useForm} from "antd/es/form/Form";
 import FormItem from "antd/es/form/FormItem";
-import { resolveFilterItemsByType } from "./filters-form-resolver";
-import { useAppDispatch, useAppSelector } from "../../store/config/hooks";
+import {Button, Drawer, Empty, Row} from "antd";
+import {useState} from "react";
 import isEmpty from "lodash/isEmpty";
 
-import { ordersSliceActions, selectOrdersAppliedFilters } from "../../store/slices/orders";
-import { TOrderFilters } from "../../store/slices/orders/orders-slice-types";
-import { useEffect, useState } from "react";
+import {TFilters} from "./filters-form.types"
+import {resolveFilterItemsByType} from "./filters-form-resolver";
+import {useAppDispatch, useAppSelector} from "../../store/config/hooks";
+import {ordersSliceActions, selectOrdersAppliedFilters} from "../../store/slices/orders";
+import {TOrderFilters} from "../../store/slices/orders/orders-slice-types";
 
 import s from './filters-form.module.scss';
 
@@ -33,10 +33,6 @@ export const FiltersForm = ({
   };
 
   const appliedFilters = useAppSelector(selectOrdersAppliedFilters);
-
-  useEffect(() => {
-    form.resetFields();
-  }, [appliedFilters]);
 
   const applyFilters = (values: TOrderFilters) => {
     dispatch(ordersSliceActions.setFilters(values));

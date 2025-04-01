@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {Provider} from "react-redux"
+
 import Home from "./pages/home/home"
 import OrderDetails from "./pages/order-details/order-details"
 import Orders from "./pages/orders/orders"
 import NotFound from "./pages/not-found/not-found"
-import { Provider } from "react-redux"
-import { store } from "./store/config"
-import { Header } from "./components/header/header"
+import {store} from "./store/config"
+import {Header} from "./components/header/header"
 
 import './App.css';
 

@@ -1,6 +1,7 @@
 import {TableProps} from "antd";
-import { TOrder } from "../../store/slices/orders";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+
+import {TOrder} from "../../store/slices/orders";
 
 export const ordersMockColumns: TableProps<TOrder>['columns'] = [
   {

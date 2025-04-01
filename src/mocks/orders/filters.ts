@@ -1,5 +1,6 @@
-import { SelectProps } from "antd";
-import { TFilters } from "../../components/filters-form";
+import {SelectProps} from "antd";
+
+import {TFilters} from "../../components/filters-form";
 
 export const ordersFilters: TFilters = [
   {

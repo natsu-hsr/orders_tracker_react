@@ -1,13 +1,16 @@
-import { MenuOutlined } from "@ant-design/icons";
+import {MenuOutlined} from "@ant-design/icons";
 import Layout from "antd/es/layout";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Button, Col, Drawer, Menu, Row } from "antd";
+import {Button, Col, Drawer, Menu, Row} from "antd";
+import React, {useState} from "react";
+import {Link, useLocation} from "react-router-dom";
+
 import PandaLogo from '../../assets/panda.svg?react'
 
 import s from './header.module.scss';
 
 export const Header = React.memo(() => {
+  const location = useLocation();
+
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => setOpen(true);
@@ -48,15 +51,16 @@ export const Header = React.memo(() => {
             <Menu
               className={s['ant-menu']}
               mode="inline"
+              selectedKeys={[location.pathname]}
             >
-              <Menu.Item key="main">
+              <Menu.Item key="/">
                 <Link
                   to="/"
                   onClick={onClose}
                 >Главная
                 </Link>
               </Menu.Item>
-              <Menu.Item key="orders">
+              <Menu.Item key="/orders">
                 <Link
                   to="/orders"
                   onClick={onClose}

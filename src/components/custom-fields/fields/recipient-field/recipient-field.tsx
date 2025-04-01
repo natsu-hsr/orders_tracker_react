@@ -1,7 +1,6 @@
-import { TOrderRecipient } from "../../../../store/slices/orders";
-import { SenderField } from "../sender-field/sender-field";
-import { LabelValueText } from "../../technical/label-value-text/label-value-text";
-
+import {TOrderRecipient} from "../../../../store/slices/orders";
+import {SenderField} from "../sender-field/sender-field";
+import {LabelValueText} from "../../technical/label-value-text/label-value-text";
 
 type RecipientFieldProps = {
    value?: TOrderRecipient

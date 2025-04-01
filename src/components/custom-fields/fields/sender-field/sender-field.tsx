@@ -1,10 +1,10 @@
 
-import { CheckCircleTwoTone, CloseCircleTwoTone } from "@ant-design/icons"
-import { ReactNode } from "react";
+import {CheckCircleTwoTone, CloseCircleTwoTone} from "@ant-design/icons"
+import {ReactNode} from "react";
 
-import { FormItemWrapper } from "../../technical/form-item-wrapper/form-item-wrapper";
-import { LabelValueText } from "../../technical/label-value-text/label-value-text";
-import { TOrderSender } from "../../../../store/slices/orders"
+import {FormItemWrapper} from "../../technical/form-item-wrapper/form-item-wrapper";
+import {LabelValueText} from "../../technical/label-value-text/label-value-text";
+import {TOrderSender} from "../../../../store/slices/orders"
 
 type SenderFieldProps = {
   value?: Partial<TOrderSender>

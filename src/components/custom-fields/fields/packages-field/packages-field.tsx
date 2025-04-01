@@ -1,8 +1,9 @@
-import { Col, Row } from "antd";
-import { TOrderPackages } from "../../../../store/slices/orders";
+import {Col, Row} from "antd";
+
+import {TOrderPackages} from "../../../../store/slices/orders";
+import {PackageItem} from "./package-item";
 
 import s from './packages-field.module.scss'
-import { PackageItem } from "./package-item";
 
 type PackagesFieldProps = {
   value?: TOrderPackages;

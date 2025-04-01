@@ -1,18 +1,20 @@
 import Form from "antd/es/form";
-import { useForm } from "antd/es/form/Form";
+import {useForm} from "antd/es/form/Form";
 import FormItem from "antd/es/form/FormItem";
 import Input from "antd/es/input";
 import TextArea from "antd/es/input/TextArea";
-import { Col, Row } from "antd";
+import {Col, Row} from "antd";
 import cn from 'classnames';
 
-import { TOrderDetails } from "../../store/slices/orders"
-import { BoolField } from "../custom-fields";
-import { CostField } from "../custom-fields";
-import { SenderField } from "../custom-fields";
-import { RecipientField } from "../custom-fields";
-import { LocationField } from "../custom-fields";
-import { PackagesField } from "../custom-fields/fields/packages-field/packages-field";
+import {TOrderDetails} from "../../store/slices/orders"
+import {
+  BoolField,
+  CostField,
+  SenderField,
+  RecipientField,
+  LocationField,
+  PackagesField,
+} from "../custom-fields";
 
 import s from './order-details-form.module.scss';
 

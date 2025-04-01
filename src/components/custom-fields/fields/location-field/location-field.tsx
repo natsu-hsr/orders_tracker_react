@@ -1,7 +1,7 @@
-import { TOrderLocation } from "../../../../store/slices/orders"
+import {TOrderLocation} from "../../../../store/slices/orders"
 
-import { LabelValueText } from "../../technical/label-value-text/label-value-text";
-import { FormItemWrapper } from "../../technical/form-item-wrapper/form-item-wrapper";
+import {LabelValueText} from "../../technical/label-value-text/label-value-text";
+import {FormItemWrapper} from "../../technical/form-item-wrapper/form-item-wrapper";
 
 type LocationFieldProps = {
   value?: TOrderLocation

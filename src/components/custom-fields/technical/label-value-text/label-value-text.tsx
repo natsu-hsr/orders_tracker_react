@@ -1,6 +1,6 @@
-import { Flex } from 'antd';
+import {Flex} from 'antd';
 import cn from 'classnames';
-import { ReactNode } from 'react';
+import {ReactNode} from 'react';
 
 import s from './label-value-text.module.scss';
 

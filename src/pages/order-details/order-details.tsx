@@ -1,14 +1,15 @@
-import { Alert, Button, Row, Skeleton, Space } from "antd";
+import {Alert, Button, Row, Skeleton, Space} from "antd";
 import Typography from "antd/es/typography";
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
-import { findOrderDetailsById, TOrderDetails } from "../../store/slices/orders";
-import { OrderDetailsForm } from "../../components/order-details-form/order-details-form";
-import { LeftCircleTwoTone } from "@ant-design/icons";
+import {LeftCircleTwoTone} from "@ant-design/icons";
+import {useEffect, useState} from "react";
+import {useNavigate, useParams} from "react-router";
+
+import {findOrderDetailsById, TOrderDetails} from "../../store/slices/orders";
+import {OrderDetailsForm} from "../../components/order-details-form/order-details-form";
 
 import s from './order-details.module.scss';
 
-const { Title } = Typography;
+const {Title} = Typography;
 
 export const OrderDetails = () => {
   const navigate = useNavigate();

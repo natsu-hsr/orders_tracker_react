@@ -1,7 +1,8 @@
-import { Input, InputNumber } from "antd";
-import { TFilter } from "./filters-form.types"
-import { CustomSelect } from "../custom-fields/fields/custom-select/custom-select";
-import { statusFilters } from "../../mocks/orders/filters";
+import {Input, InputNumber} from "antd";
+
+import {TFilter} from "./filters-form.types"
+import {CustomSelect} from "../custom-fields";
+import {statusFilters} from "../../mocks/orders/filters";
 
 type FiltersFormResolverArgs = {
   type: TFilter['type'];
